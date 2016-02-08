@@ -1,0 +1,9 @@
+TYPO3:
+  Neos:
+    typoScript:
+      autoInclude:
+        'Flownative.Neos.Compressor': TRUE
+
+  TypoScript:
+    defaultContext:
+      'Flownative.Compressor': 'Flownative\Neos\Compressor\CompressionHelper'

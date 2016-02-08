@@ -1,0 +1,10 @@
+prototype(TYPO3.Neos:Page) {
+    head.@process.compression {
+        expression = ${Flownative.Compressor.compress(value)}
+        @position = 'end 999999999'
+    }
+    body.@process.compression {
+        expression = ${Flownative.Compressor.compress(value)}
+        @position = 'end 999999999'
+    }
+}

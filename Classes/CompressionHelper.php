@@ -24,7 +24,7 @@ class CompressionHelper implements ProtectedContextAwareInterface
     /**
      * Run the value through the compressor.
      *
-     * @param $content string
+     * @param string $content
      * @return string
      */
     public function compress($content)

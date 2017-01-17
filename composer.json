@@ -1,10 +1,10 @@
 {
     "name": "flownative/neos-compressor",
-    "type": "typo3-flow-package",
+    "type": "neos-plugin",
     "description": "Output compression for Neos",
     "license": "MIT",
     "require": {
-        "typo3/neos": "~2.0",
+        "neos/neos": "^3.0",
         "wyrihaximus/html-compress": "~1.2"
     },
     "autoload": {

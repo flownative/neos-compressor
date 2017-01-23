@@ -11,5 +11,10 @@
         "psr-4": {
             "Flownative\\Neos\\Compressor\\": "Classes"
         }
+    },
+    "extra": {
+        "applied-flow-migrations": [
+            "TYPO3.FLOW3-201201261636"
+        ]
     }
 }

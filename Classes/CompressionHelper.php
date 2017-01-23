@@ -2,7 +2,7 @@
 namespace Flownative\Neos\Compressor;
 
 use TYPO3\Eel\ProtectedContextAwareInterface;
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Flow\Annotations as Flow;
 use WyriHaximus\HtmlCompress\Factory;
 
 class CompressionHelper implements ProtectedContextAwareInterface

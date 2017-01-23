@@ -1,9 +1,8 @@
-
 Neos:
+  Fusion:
+    defaultContext:
+      Flownative.Compressor: Flownative\Neos\Compressor\CompressionHelper
   Neos:
     fusion:
       autoInclude:
         Flownative.Neos.Compressor: true
-  Fusion:
-    defaultContext:
-      Flownative.Compressor: Flownative\Neos\Compressor\CompressionHelper

@@ -1,15 +1,15 @@
 <?php
 namespace Flownative\Neos\Compressor;
 
-use TYPO3\Eel\ProtectedContextAwareInterface;
-use TYPO3\Flow\Annotations as Flow;
+use Neos\Eel\ProtectedContextAwareInterface;
+use Neos\Flow\Annotations as Flow;
 use WyriHaximus\HtmlCompress\Factory;
+use WyriHaximus\HtmlCompress\Parser;
 
 class CompressionHelper implements ProtectedContextAwareInterface
 {
-
     /**
-     * @var \WyriHaximus\HtmlCompress\Parser
+     * @var Parser
      */
     protected $parser;
 
@@ -25,6 +25,7 @@ class CompressionHelper implements ProtectedContextAwareInterface
      * Run the value through the compressor.
      *
      * @param string $content
+     *
      * @return string
      */
     public function compress($content)
@@ -36,11 +37,11 @@ class CompressionHelper implements ProtectedContextAwareInterface
      * All methods are considered safe, i.e. can be executed from within Eel
      *
      * @param string $methodName
+     *
      * @return boolean
      */
     public function allowsCallOfMethod($methodName)
     {
         return true;
     }
-
 }

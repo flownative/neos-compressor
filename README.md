@@ -1,6 +1,6 @@
 # Flownative Neos Compressor
 
-This package by default compresses the `head` and `body` of the `TYPO3.Neos:Page` prototype
+This package by default compresses the `head` and `body` of the `Neos.Neos:Page` prototype
 using the default compressor of `wyrihaximus/html-compress`.
 
 ## Installation
@@ -9,7 +9,7 @@ using the default compressor of `wyrihaximus/html-compress`.
 
 ## Usage
 
-As soon as the package is installed, the `TYPO3.Neos:Page` prototype is amended with `@process`
+As soon as the package is installed, the `Neos.Neos:Page` prototype is amended with `@process`
 instructions on the `head` and `body` elements. This will compress and "regular" output without
 any further steps to take.
 
@@ -18,7 +18,7 @@ any further steps to take.
 To remove the default compression, simply override:
 
 ```
-prototype(TYPO3.Neos:Page) {
+prototype(Neos.Neos:Page) {
     head.@process.compression >
     body.@process.compression >
 }

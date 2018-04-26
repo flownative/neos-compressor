@@ -1,4 +1,4 @@
-prototype(Page) {
+prototype(Neos.Neos:Page) {
     head.@process.compression {
         expression = ${Flownative.Compressor.compress(value)}
         @position = 'end 999999999'

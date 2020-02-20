@@ -1,24 +1,25 @@
 <?php
+declare(strict_types=1);
+
 namespace Flownative\Neos\Compressor;
 
 use Neos\Eel\ProtectedContextAwareInterface;
-use Neos\Flow\Annotations as Flow;
 use WyriHaximus\HtmlCompress\Factory;
-use WyriHaximus\HtmlCompress\Parser;
+use WyriHaximus\HtmlCompress\HtmlCompressorInterface;
 
 class CompressionHelper implements ProtectedContextAwareInterface
 {
     /**
-     * @var Parser
+     * @var HtmlCompressorInterface
      */
-    protected $parser;
+    protected $compressor;
 
     /**
      * CompressionHelper constructor.
      */
     public function __construct()
     {
-        $this->parser = Factory::construct();
+        $this->compressor = Factory::construct();
     }
 
     /**
@@ -28,9 +29,9 @@ class CompressionHelper implements ProtectedContextAwareInterface
      *
      * @return string
      */
-    public function compress($content)
+    public function compress($content): string
     {
-        return $this->parser->compress($content);
+        return $this->compressor->compress($content);
     }
 
     /**
@@ -38,9 +39,9 @@ class CompressionHelper implements ProtectedContextAwareInterface
      *
      * @param string $methodName
      *
-     * @return boolean
+     * @return bool
      */
-    public function allowsCallOfMethod($methodName)
+    public function allowsCallOfMethod($methodName): bool
     {
         return true;
     }

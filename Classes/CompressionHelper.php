@@ -2,7 +2,6 @@
 namespace Flownative\Neos\Compressor;
 
 use Neos\Eel\ProtectedContextAwareInterface;
-use Neos\Flow\Annotations as Flow;
 use WyriHaximus\HtmlCompress\Factory;
 use WyriHaximus\HtmlCompress\Parser;
 

@@ -4,8 +4,8 @@
     "description": "Output compression for Neos",
     "license": "MIT",
     "require": {
-        "neos/neos": "^5.0 || ^7.0",
-        "wyrihaximus/html-compress": "~1.2"
+        "neos/neos": "^5.3 || ^7.0",
+        "wyrihaximus/html-compress": "^4.0"
     },
     "autoload": {
         "psr-4": {
